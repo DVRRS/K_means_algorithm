@@ -3,7 +3,7 @@ import math
 import matplotlib.pyplot as plt
 from point import * 
 
-def generatePoints (points, max_x=50, max_y=50): 
+def generatePoints (points, max_x=100, max_y=100): 
 	"""
 	This function generates a number of random points. 
 	:param points: int
@@ -20,7 +20,7 @@ def generatePoints (points, max_x=50, max_y=50):
 
 	return p
 
-def generateCentroids (k, max_x=50, max_y=50): 
+def generateCentroids (k, max_x=100, max_y=100): 
 	"""
 	This function generates k random centroids. 
 	:param k: int
@@ -113,6 +113,9 @@ def plot (data):
 	"""
 	fig = plt.figure() 
 	ax = fig.add_axes ([0, 0, 1, 1])
+	ax.set_xlabel('X')
+	ax.set_ylabel('Y')
+	ax.set_title('K means algorithm')
 	for key, value in data.items(): 
 		pointsX = []
 		pointsY = []

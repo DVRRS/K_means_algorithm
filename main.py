@@ -63,16 +63,15 @@ def main ():
 			centroids = newCentroids
 
 		# It has the centroids uploaded (uses the new centroid)
-		plot (clusters)
+		# plot (clusters)
 
 
 if __name__ == '__main__':
 
 	result = main()
 
+	# Prints the final result in console
 	print("\n\n")
 	print ("***** Final result ******")
 	printResults (result)
 	plot (result)
-
-# https://www.tutorialspoint.com/matplotlib/matplotlib_scatter_plot.htm#:~:text=Scatter%20plots%20are%20used%20to,the%20X%20and%20Y%20axes.
